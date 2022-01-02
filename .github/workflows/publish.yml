@@ -7,7 +7,7 @@ on:
 
 env:
   DOTNET_VERSION: 6.0.x
-  BUNDLE_PLATFORMS: x86|x64
+  BUNDLE_PLATFORMS: x64
 
 jobs:
   publish:
