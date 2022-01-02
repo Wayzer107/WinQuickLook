@@ -23,7 +23,7 @@ jobs:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
     - name: Build application
-      run: dotnet build .\WinQuickLook\WinQuickLook.csproj /p:Platform=x86 /p:Configuration=Release /verbosity:minimal
+      run: dotnet build .\WinQuickLook\WinQuickLook.csproj /p:Platform=x64 /p:Configuration=Release
 
     - name: Lint C# code
       run: dotnet format whitespace --verify-no-changes --verbosity detailed --no-restore
